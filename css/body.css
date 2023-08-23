@@ -1,85 +1,49 @@
-:root {
-    --b :linear-gradient(rgb(11, 11, 34), rgba(11, 11, 34, 0.8)); 
-
+:root{
+    --b: #182eba;
 }
 body {
     font-family: 'Noto Sans', sans-serif;
   }
-
-
+.navbar{
+    -webkit-box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+}
 #header {
     background: linear-gradient(rgb(11, 11, 34), rgba(11, 11, 34, 0.8)); 
   }
-
-  nav {
-    background:var(--b); 
-  }
-.navbar-nav a.nav-link {
-        font-family: 'Poppins', sans-serif;
-        font-weight: 500;
-        color: white; 
-      }
-.navbar a.navbar-brand {
-        font-family: 'Poppins', sans-serif;
-        font-weight: 500;
-        color: white; 
-      }
 .navbar-nav a.nav-link:hover {
-        color: rgb(95, 101, 97); 
+        color: rgb(160, 156, 148); 
         text-decoration: none; 
       }
-  
+.navbar-nav a.nav-link {
+    color:rgb(46, 46, 96) ;
+    font-weight: bold;
+}
+.navbar-brand span{
+    color:rgb(27, 49, 145) ;
+}
+.btn:not(.nav-btns button){
+    background-color: #ffffff;
+    color: rgb(27, 49, 145);
+    padding: 10px 28px;
+    border-radius: 25px;
+    border: 1px solid rgb(85, 85, 85);
+}
+.btn:not(.nav-btns button):hover{
+    background-color: var(--b);
+    color: #fff;
+    border-color: var(--b);
+}
 /*pelayanan*/
-#new{
-    padding: 100px 0;
+#pelayanan{
+    background: linear-gradient(rgb(11, 11, 34), rgba(11, 11, 34, 0.8)); 
 }
 h2{
     font-size: 48px;
     font-weight: 500;
     color: rgb(109, 68, 49);
 }
-.sub-title{
-    font-size: 18px;
-    color: black;
-}
-.card-layanan{
-    width: 100%;
-    height: 313px;
-    border-radius: 4px;
-    background-color: var(--b);
-    padding: 40px;
-    box-shadow: 0 0 7px 3px (--b);
-}
-.row .btn1{
-    height: 45px;
-    width: 35%;
-    outline: none;
-    border: none;
-    
-}
-.btn0{
-    height: 40px;
-    width: 40%;
-    outline: none;
-    border: none;
-    background: rgb(109, 68, 49);
-    color: aliceblue;
-    border-radius: 60px;
-    font-weight: 700;
-
-}
-.shopping-cart{
-    background-color: var(--b);
-}
 
 
-/*hover*/
 
-.card-layanan:hover{
-    border-radius: 4px;
-    background: linear-gradient(160deg, rgb(11, 11, 32), rgb(75,96,79));
-    padding: 40px;
-    box-shadow: 0 0 7px 3px rgb(109, 68, 49);
-    color: white;
-}
 
